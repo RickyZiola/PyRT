@@ -22,11 +22,28 @@ numpy = [
     {version = ">=1.17.3", markers = "python_version >= \"3.8\""},
 ]
 
+[[package]]
+name = "trimesh"
+version = "3.17.1"
+description = "Import, export, process, analyze and view triangular meshes."
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+numpy = "*"
+
+[package.extras]
+all = ["psutil", "msgpack", "xatlas", "requests", "setuptools", "pycollada", "meshio", "python-fcl", "chardet", "pyglet (<2)", "networkx", "shapely", "jsonschema", "mapbox-earcut", "scipy", "lxml", "glooey", "sympy", "pillow", "svg.path", "rtree", "xxhash", "scikit-image", "colorlog"]
+easy = ["pyglet (<2)", "networkx", "msgpack", "xxhash", "jsonschema", "mapbox-earcut", "scipy", "lxml", "sympy", "requests", "setuptools", "pycollada", "pillow", "svg.path", "rtree", "shapely", "colorlog", "chardet"]
+test = ["pyinstrument", "pytest", "coveralls", "pytest-cov", "ezdxf"]
+
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "bff311d28450f4e8e63beefbb06868837c38eb21f3be5e79e08e50052f21b7e7"
+content-hash = "b1857e66d28e86e8984078953acae7fbcf2b38f7aea5b2fa2f341e920cdb1d3a"
 
 [metadata.files]
 numpy = []
 opencv-python = []
+trimesh = []
